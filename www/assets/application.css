@@ -1,0 +1,50 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+*/
+#sidebar ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#sidebar li, .ul-no-bullets {
+  list-style-type: none;
+}
+
+#sidebar a {
+  padding: 6px 10px;
+  border-radius: 25px;
+}
+
+#l1-list {
+  list-style-type: upper-roman;
+}
+
+#sidebar img {
+  vertical-align:middle;
+}
+
+.indent {
+  margin-left: 0px;
+}
+ol, ul {
+  -webkit-padding-start: 20px;
+  -webkit-margin-before: 0px;
+}
+h4 {
+  -webkit-margin-before: 10px;
+  -webkit-margin-after: 0px;
+}
+
+img {
+  border-style: none;
+}
+
+.selected-language {
+  background: #B3AAF7;
+}
+/* line 4, /Users/admin/andy/projects/hospital_forms/app/assets/stylesheets/emergency_triage.css.scss */
+label, p, .body_text {
+  font-size: 19px;
+}

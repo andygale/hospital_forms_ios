@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Emergency Connect</title>
+  <script type="text/javascript" src="javascripts/locales.js"></script>
+  <link href="assets/application.css" media="screen" rel="stylesheet" type="text/css" />
+  <script src="assets/application.js" type="text/javascript"></script>
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="KrCyH0ee3DeesT2e+ALJrQWO523zO5u3BGwUNK93K/U=" name="csrf-token" />
+</head>
+<body>
+  <div id="page">
+    <form accept-charset="UTF-8" action="/emergency_triage/index" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="KrCyH0ee3DeesT2e+ALJrQWO523zO5u3BGwUNK93K/U=" /></div>
+<div id="content">
+  <div id="header">
+    <div>
+      <img alt="Logo-713350" height="100" src="assets/logo-713350.png" style="display:block;margin-left:auto;margin-right:auto;" width="100" />
+    </div>
+      <h1 class="translate_emergency_triage_questionnaire" style='display:inline;'></h1>
+    <div>
+      This questionnaire can be instantly translated into many languages.<br>
+      <table>
+        <tr>
+          <td width=50 style='vertical-align:top;'>Step 1:</td>
+          <td>Fill out the questionnaire in your preferred language</td>
+        </tr>
+        <tr>
+          <td style='vertical-align:top;'>Step 2:</td>
+          <td>Translate your completed questionnaire into the language of your caretaker by clicking on the appropriate flag or language name. All data will remain private on your device and will not be transmitted to any server.</td>
+        </tr>
+      </table>
+    </div>
+    <h2 class="translate_language"></h2>
+  </div>
+  <div id="sidebar">
+  <ul id="sidebar-items">
+    <li>
+      <ul class="languages">
+          <li class="language-en-US selected-language"><a href="#" onclick="switchLocale('en-US');return false;">
+            <img src='assets/UnitedKingdom.png'>
+            Change to English
+          </a></li>
+          <li class="language-es-MX selected-language"><a href="#" onclick="switchLocale('es-MX');return false;">
+            <img src='assets/Mexico.png'>
+            Cambiar a espa&#241;ol
+          </a></li>
+          <li class="language-fr-FR selected-language"><a href="#" onclick="switchLocale('fr-FR');return false;">
+            <img src='assets/France.png'>
+            Changer au fran&#231;ais
+          </a></li>
+          <li class="language-sw selected-language"><a href="#" onclick="switchLocale('sw');return false;">
+            <img src='assets/Kenya.png'>
+            Mabadiliko ya Kiswahili
+          </a></li>
+          <li class="language-ar selected-language"><a href="#" onclick="switchLocale('ar');return false;">
+            <img src='assets/Egypt.png'>
+            &#1578;&#1594;&#1610;&#1610;&#1585; &#1604;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;
+          </a></li>
+          <li class="language-pt-PT selected-language"><a href="#" onclick="switchLocale('pt-PT');return false;">
+            <img src='assets/Portugal.png'>
+            Mude para Portugu&#234;s
+          </a></li>
+          <li class="language-it selected-language"><a href="#" onclick="switchLocale('it');return false;">
+            <img src='assets/Italy.png'>
+            Cambia in Italiano
+          </a></li>
+          <li class="language-ru-RU selected-language"><a href="#" onclick="switchLocale('ru-RU');return false;">
+            <img src='assets/RussianFederation.png'>
+            &#1048;&#1079;&#1084;&#1077;&#1085;&#1077;&#1085;&#1080;&#1077; &#1056;&#1086;&#1089;&#1089;&#1080;&#1103;
+          </a></li>
+          <li class="language-sr selected-language"><a href="#" onclick="switchLocale('sr');return false;">
+            <img src='assets/Serbia.png'>
+            &#1055;&#1088;&#1086;&#1084;&#1077;&#1085;&#1072; &#1085;&#1072; &#1089;&#1088;&#1087;&#1089;&#1082;&#1086;&#1112;
+          </a></li>
+          <li class="language-zh selected-language"><a href="#" onclick="switchLocale('zh');return false;">
+            <img src='assets/China.png'>
+            &#20999;&#25442;&#21040;&#20013;&#25991;
+          </a></li>
+          <li class="language-bg selected-language"><a href="#" onclick="switchLocale('bg');return false;">
+            <img src='assets/Bulgaria.png'>
+            &#1055;&#1088;&#1086;&#1084;&#1103;&#1085;&#1072; &#1085;&#1072; &#1082;&#1080;&#1090;&#1072;&#1081;&#1089;&#1082;&#1080;
+          </a></li>
+          <li class="language-ht selected-language"><a href="#" onclick="switchLocale('ht');return false;">
+            <img src='assets/Haiti.png'>
+            Chanjman nan krey&#242;l
+          </a></li>
+          <li class="language-hi selected-language"><a href="#" onclick="switchLocale('hi');return false;">
+            <img src='assets/India.png'>
+            Bhasha
+          </a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+
+  <ol id="l1-list">
+    <li><h3 class="translate_what_is_the_reason"></h3></li>
+
+    <ol>
+      <li>
+        <h4><input id="check_box_pain" name="pain" type="checkbox" value="pain" /> <label class="translate_pain" for="check_box_pain">Check box pain</label></h4>
+        <p class="indent">
+          <input id="check_box_diffuse" name="diffuse" type="checkbox" value="diffuse" /> <label class="translate_diffuse" for="check_box_diffuse">Check box diffuse</label><br>
+          <input id="check_box_localized" name="localized" type="checkbox" value="localized" /> <label class="translate_localized" for="check_box_localized">Check box localized</label><br>
+          <input id="check_box_stabbing" name="stabbing" type="checkbox" value="stabbing" /> <label class="translate_stabbing" for="check_box_stabbing">Check box stabbing</label><br>
+          <input id="check_box_cramps" name="cramps" type="checkbox" value="cramps" /> <label class="translate_cramps" for="check_box_cramps">Check box cramps</label><br>
+          <input id="check_box_tightness" name="tightness" type="checkbox" value="tightness" /> <label class="translate_tightness" for="check_box_tightness">Check box tightness</label><br>
+          <input id="check_box_pressure" name="pressure" type="checkbox" value="pressure" /> <label class="translate_pressure" for="check_box_pressure">Check box pressure</label><br>
+        </p>
+        <div class="indent">
+          <div class="translate_how_intense_is_pain body_text"></div>
+          <div class="translate_pain_scale body_text"></div>
+          <input id="pain_intensity_1" name="pain_intensity" type="radio" value="1" /><label class="translate_pain_intensity" for="pain_intensity_1">1</label> &nbsp;
+          <input id="pain_intensity_2" name="pain_intensity" type="radio" value="2" /><label class="translate_pain_intensity" for="pain_intensity_2">2</label> &nbsp;
+          <input id="pain_intensity_3" name="pain_intensity" type="radio" value="3" /><label class="translate_pain_intensity" for="pain_intensity_3">3</label> &nbsp;
+          <input id="pain_intensity_4" name="pain_intensity" type="radio" value="4" /><label class="translate_pain_intensity" for="pain_intensity_4">4</label> &nbsp;
+          <input id="pain_intensity_5" name="pain_intensity" type="radio" value="5" /><label class="translate_pain_intensity" for="pain_intensity_5">5</label> &nbsp;
+          <input id="pain_intensity_6" name="pain_intensity" type="radio" value="6" /><label class="translate_pain_intensity" for="pain_intensity_6">6</label> &nbsp;
+          <input id="pain_intensity_7" name="pain_intensity" type="radio" value="7" /><label class="translate_pain_intensity" for="pain_intensity_7">7</label> &nbsp;
+          <input id="pain_intensity_8" name="pain_intensity" type="radio" value="8" /><label class="translate_pain_intensity" for="pain_intensity_8">8</label> &nbsp;
+          <input id="pain_intensity_9" name="pain_intensity" type="radio" value="9" /><label class="translate_pain_intensity" for="pain_intensity_9">9</label> &nbsp;
+          <input id="pain_intensity_10" name="pain_intensity" type="radio" value="10" /><label class="translate_pain_intensity" for="pain_intensity_10">10</label> &nbsp;
+        </div>
+      </li>
+      <li><h4><input id="check_box_burning_sensation" name="burning_sensation" type="checkbox" value="burning_sensation" /> <label class="translate_burning_sensation" for="check_box_burning_sensation">Check box burning sensation</label></h4></li>
+      <li><h4><input id="check_box_itching" name="itching" type="checkbox" value="itching" /> <label class="translate_itching" for="check_box_itching">Check box itching</label></h4></li>
+      <li><h4><input id="check_box_swelling" name="swelling" type="checkbox" value="swelling" /> <label class="translate_swelling" for="check_box_swelling">Check box swelling</label></h4></li>
+      <li><h4><input id="check_box_fainting" name="fainting" type="checkbox" value="fainting" /> <label class="translate_fainting" for="check_box_fainting">Check box fainting</label></h4></li>
+      <li><h4><input id="check_box_dizziness" name="dizziness" type="checkbox" value="dizziness" /> <label class="translate_dizziness" for="check_box_dizziness">Check box dizziness</label></h4></li>
+      <li><h4><input id="check_box_fatigue" name="fatigue" type="checkbox" value="fatigue" /> <label class="translate_fatigue" for="check_box_fatigue">Check box fatigue</label></h4></li>
+      <li><h4><input id="check_box_numbness" name="numbness" type="checkbox" value="numbness" /> <label class="translate_numbness" for="check_box_numbness">Check box numbness</label></h4></li>
+      <li><h4><input id="check_box_nausea" name="nausea" type="checkbox" value="nausea" /> <label class="translate_nausea" for="check_box_nausea">Check box nausea</label></h4></li>
+      <li><h4><input id="check_box_vomiting" name="vomiting" type="checkbox" value="vomiting" /> <label class="translate_vomiting" for="check_box_vomiting">Check box vomiting</label></h4></li>
+      <li><h4><input id="check_box_difficulty_breathing" name="difficulty_breathing" type="checkbox" value="difficulty_breathing" /> <label class="translate_difficulty_breathing" for="check_box_difficulty_breathing">Check box difficulty breathing</label></h4></li>
+      <li><h4><input id="check_box_cough" name="cough" type="checkbox" value="cough" /> <label class="translate_cough" for="check_box_cough">Check box cough</label></h4>
+        <div class="indent">
+          <input id="check_box_with_secretions" name="with_secretions" type="checkbox" value="with_secretions" /> <label class="translate_with_secretions" for="check_box_with_secretions">Check box with secretions</label><br>
+            &nbsp;&nbsp;&nbsp;<input id="check_box_green" name="green" type="checkbox" value="green" /> <label class="translate_green" for="check_box_green">Check box green</label><br>
+            &nbsp;&nbsp;&nbsp;<input id="check_box_brown" name="brown" type="checkbox" value="brown" /> <label class="translate_brown" for="check_box_brown">Check box brown</label><br>
+            &nbsp;&nbsp;&nbsp;<input id="check_box_white" name="white" type="checkbox" value="white" /> <label class="translate_white" for="check_box_white">Check box white</label><br>
+            &nbsp;&nbsp;&nbsp;<input id="check_box_yellow" name="yellow" type="checkbox" value="yellow" /> <label class="translate_yellow" for="check_box_yellow">Check box yellow</label>
+        </div>
+      </li>
+      <li><h4><input id="check_box_choking" name="choking" type="checkbox" value="choking" /> <label class="translate_choking" for="check_box_choking">Check box choking</label></h4></li>
+      <li><h4><input id="check_box_palpitations" name="palpitations" type="checkbox" value="palpitations" /> <label class="translate_palpitations" for="check_box_palpitations">Check box palpitations</label></h4></li>
+      <li><h4><input id="check_box_fever" name="fever" type="checkbox" value="fever" /> <label class="translate_fever" for="check_box_fever">Check box fever</label></h4></li>
+      <li><h4><input id="check_box_appetite_loss" name="appetite_loss" type="checkbox" value="appetite_loss" /> <label class="translate_appetite_loss" for="check_box_appetite_loss">Check box appetite loss</label></h4></li>
+      <li><h4><input id="check_box_weight_loss" name="weight_loss" type="checkbox" value="weight_loss" /> <label class="translate_weight_loss" for="check_box_weight_loss">Check box weight loss</label></h4></li>
+      <li><h4><input id="check_box_burn" name="burn" type="checkbox" value="burn" /> <label class="translate_burn" for="check_box_burn">Check box burn</label></h4></li>
+      <li><h4><input id="check_box_blood_in" name="blood_in" type="checkbox" value="blood_in" /> <label class="translate_blood_in" for="check_box_blood_in">Check box blood in</label></h4>
+        <ul  class="ul-no-bullets">
+          <li><input id="check_box_urine" name="urine" type="checkbox" value="urine" /> <label class="translate_urine" for="check_box_urine">Check box urine</label></li>
+          <li><input id="check_box_stool" name="stool" type="checkbox" value="stool" /> <label class="translate_stool" for="check_box_stool">Check box stool</label><br>
+              &nbsp;&nbsp;&nbsp;<input id="check_box_stool_black" name="stool_black" type="checkbox" value="stool_black" /> <label class="translate_stool_black" for="check_box_stool_black">Check box stool black</label><br>
+              &nbsp;&nbsp;&nbsp;<input id="check_box_stool_red" name="stool_red" type="checkbox" value="stool_red" /> <label class="translate_stool_red" for="check_box_stool_red">Check box stool red</label>
+          </li>
+        </ul>
+      </li>
+      <li><h4><input id="check_box_constipation" name="constipation" type="checkbox" value="constipation" /> <label class="translate_constipation" for="check_box_constipation">Check box constipation</label></h4></li>
+      <li><h4><input id="check_box_diarrhea" name="diarrhea" type="checkbox" value="diarrhea" /> <label class="translate_diarrhea" for="check_box_diarrhea">Check box diarrhea</label></h4></li>
+      <li><h4><input id="check_box_intoxication_with" name="intoxication_with" type="checkbox" value="intoxication_with" /> <label class="translate_intoxication_with" for="check_box_intoxication_with">Check box intoxication with</label></h4>
+        <div class="indent">
+          <input id="check_box_drugs" name="drugs" type="checkbox" value="drugs" /> <label class="translate_drugs" for="check_box_drugs">Check box drugs</label><br>
+          <input id="check_box_alcohol" name="alcohol" type="checkbox" value="alcohol" /> <label class="translate_alcohol" for="check_box_alcohol">Check box alcohol</label><br>
+          <input id="check_box_poison" name="poison" type="checkbox" value="poison" /> <label class="translate_poison" for="check_box_poison">Check box poison</label>
+        </div>
+      </li>
+    </ol>
+
+    <li><h3 class="translate_how_long_suffering"></h3></li>
+    <div class="indent">
+      <input id="text_field_days" name="days" size="2" type="text" /> <label class="translate_days" for="text_field_days">Text field days</label> <input id="text_field_months" name="months" size="2" type="text" /> <label class="translate_months" for="text_field_months">Text field months</label> <input id="text_field_years" name="years" size="2" type="text" /> <label class="translate_years" for="text_field_years">Text field years</label> 
+    </div>
+
+    <li><h3 class="translate_is_this_the_first_time"></h3></li>
+    <div class="indent">
+      <input id="first_time_yes" name="first_time" type="radio" value="yes" /><label class="translate_yes__first_time" for="first_time_yes">First time yes</label> <input id="first_time_no" name="first_time" type="radio" value="no" /><label class="translate_no__first_time" for="first_time_no">First time no</label> (<label class="translate_number_of_times" for="text_field_number_of_times">Text field number of times</label> <input id="text_field_number_of_times" name="number_of_times" size="2" type="text" />)
+    </div>
+
+    <li><h3 class="translate_have_you_been_diagnosed"></h3></li>
+    <ol>
+      <li><input id="check_box_hypertension" name="hypertension" type="checkbox" value="hypertension" /> <label class="translate_hypertension" for="check_box_hypertension">Check box hypertension</label></li>
+      <li><input id="check_box_congestive_heart_failure" name="congestive_heart_failure" type="checkbox" value="congestive_heart_failure" /> <label class="translate_congestive_heart_failure" for="check_box_congestive_heart_failure">Check box congestive heart failure</label></li>
+      <li><input id="check_box_heart_attack" name="heart_attack" type="checkbox" value="heart_attack" /> <label class="translate_heart_attack" for="check_box_heart_attack">Check box heart attack</label> (<label class="translate_date" for="text_field_heart_attack_date">Text field heart attack date</label> <input id="text_field_heart_attack_date" name="heart_attack_date" size="11" type="text" /> <span class="translate_day_month_year body_text"></span>)</li>
+      <li><input id="check_box_emphysema" name="emphysema" type="checkbox" value="emphysema" /> <label class="translate_emphysema" for="check_box_emphysema">Check box emphysema</label></li>
+      <li><input id="check_box_chronic_bronchitis" name="chronic_bronchitis" type="checkbox" value="chronic_bronchitis" /> <label class="translate_chronic_bronchitis" for="check_box_chronic_bronchitis">Check box chronic bronchitis</label></li>
+      <li><input id="check_box_asthma" name="asthma" type="checkbox" value="asthma" /> <label class="translate_asthma" for="check_box_asthma">Check box asthma</label></li>
+      <li><input id="check_box_stroke" name="stroke" type="checkbox" value="stroke" /> <label class="translate_stroke" for="check_box_stroke">Check box stroke</label> (<label class="translate_date" for="text_field_stroke_date">Text field stroke date</label> <input id="text_field_stroke_date" name="stroke_date" size="11" type="text" /> <span class="translate_day_month_year body_text"></span>)</li>
+      <li><input id="check_box_diabetes" name="diabetes" type="checkbox" value="diabetes" /> <label class="translate_diabetes" for="check_box_diabetes">Check box diabetes</label> <input id="check_box_type1" name="type1" type="checkbox" value="type1" /> <label class="translate_type1" for="check_box_type1">Check box type1</label> <input id="check_box_type2" name="type2" type="checkbox" value="type2" /> <label class="translate_type2" for="check_box_type2">Check box type2</label></li>
+      <li><input id="check_box_hiv_aids" name="hiv_aids" type="checkbox" value="hiv_aids" /> <label class="translate_hiv_aids" for="check_box_hiv_aids">Check box hiv aids</label></li>
+      <li><input id="check_box_physical_or_mental_handicap" name="physical_or_mental_handicap" type="checkbox" value="physical_or_mental_handicap" /> <label class="translate_physical_or_mental_handicap" for="check_box_physical_or_mental_handicap">Check box physical or mental handicap</label><br><label class="translate_specify__handicap" for="text_field_handicap_specify">Text field handicap specify</label> <input id="text_field_handicap_specify" name="handicap_specify" size="40" type="text" /></li>
+      <li><input id="check_box_psychiatric_problems" name="psychiatric_problems" type="checkbox" value="psychiatric_problems" /> <label class="translate_psychiatric_problems" for="check_box_psychiatric_problems">Check box psychiatric problems</label></li>
+      <li><input id="check_box_cancer" name="cancer" type="checkbox" value="cancer" /> <label class="translate_cancer" for="check_box_cancer">Check box cancer</label></li>
+      <li><input id="check_box_stomach_ulcer" name="stomach_ulcer" type="checkbox" value="stomach_ulcer" /> <label class="translate_stomach_ulcer" for="check_box_stomach_ulcer">Check box stomach ulcer</label></li>
+      <li><div class="translate_other_diseases body_text"></div>
+        <ul class="ul-no-bullets">
+          <li><input id="check_box_heart_and_veins" name="heart_and_veins" type="checkbox" value="heart_and_veins" /> <label class="translate_heart_and_veins" for="check_box_heart_and_veins">Check box heart and veins</label></li>
+          <li><input id="check_box_lungs" name="lungs" type="checkbox" value="lungs" /> <label class="translate_lungs" for="check_box_lungs">Check box lungs</label></li>
+          <li><input id="check_box_digestive_tract" name="digestive_tract" type="checkbox" value="digestive_tract" /> <label class="translate_digestive_tract" for="check_box_digestive_tract">Check box digestive tract</label></li>
+          <li><input id="check_box_reproductive_system" name="reproductive_system" type="checkbox" value="reproductive_system" /> <label class="translate_reproductive_system" for="check_box_reproductive_system">Check box reproductive system</label></li>
+          <li><input id="check_box_endocrine_system" name="endocrine_system" type="checkbox" value="endocrine_system" /> <label class="translate_endocrine_system" for="check_box_endocrine_system">Check box endocrine system</label></li>
+          <li><input id="check_box_muscles_and_bones" name="muscles_and_bones" type="checkbox" value="muscles_and_bones" /> <label class="translate_muscles_and_bones" for="check_box_muscles_and_bones">Check box muscles and bones</label></li>
+        </ul>
+      </li>
+    </ol>
+
+    <li><h3 class="translate_do_you_take_meds"></h3></li>
+    <ul class="ul-no-bullets">
+      <li><input id="take_meds_yes" name="take_meds" type="radio" value="yes" /><label class="translate_yes__take_meds" for="take_meds_yes">Take meds yes</label> <input id="take_meds_no" name="take_meds" type="radio" value="no" /><label class="translate_no__take_meds" for="take_meds_no">Take meds no</label></li>
+      <li>&nbsp;</li>
+      <li><span class="translate_do_you_have_list_of_meds body_text"></span> <input id="have_list_yes" name="have_list" type="radio" value="yes" /><label class="translate_yes__have_list" for="have_list_yes">Have list yes</label> <input id="have_list_no" name="have_list" type="radio" value="no" /><label class="translate_no__have_list" for="have_list_no">Have list no</label></li>
+      <li><label class="translate_which_meds_do_you_take" for="text_field_which_meds_do_you_take">Text field which meds do you take</label>
+          <input id="text_field_which_meds_do_you_take" name="which_meds_do_you_take" size="40" type="text" /></li>
+    </ul>
+
+    <li><h3 class="translate_do_you_have_allergies"></h3></li>
+    <ul class="ul-no-bullets">
+      <li><input id="check_box_to_medication" name="to_medication" type="checkbox" value="to_medication" /> <label class="translate_to_medication" for="check_box_to_medication">Check box to medication</label><br>
+          <label class="translate_specify__med_allergy" for="text_field_med_allergy_specify">Text field med allergy specify</label><br>
+          <input type="text" id="text_field_med_allergy_specify" name="med_allergy_specify" size="40"></textarea>
+      </li>
+      <li><input id="check_box_to_food" name="to_food" type="checkbox" value="to_food" /> <label class="translate_to_food" for="check_box_to_food">Check box to food</label><br>
+          <label class="translate_specify__food_allergy" for="text_field_food_allergy_specify">Text field food allergy specify</label><br>
+          <input type="text" id="text_field_food_allergy_specify" name="food_allergy_specify" size="40"></textarea>
+      </li>
+    </ul>
+  </ol>
+</div>
+</form>
+    
+    <br />
+    <br />
+    <div id="footer"><center>&copy; Copyright 2011-2012&nbsp; &nbsp; Questions or Comments? Email us at <a href="mailto:speaksafecare@gmail.com">speaksafecare@gmail.com</a><center></div>
+  </div>
+</body>
+</html>
