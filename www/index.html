@@ -16,82 +16,91 @@
     <div>
       <img alt="Logo-713350" height="100" src="assets/logo-713350.png" style="display:block;margin-left:auto;margin-right:auto;" width="100" />
     </div>
-      <h1 class="translate_emergency_triage_questionnaire" style='display:inline;'></h1>
-    <div>
-      This questionnaire can be instantly translated into many languages.<br>
-      <table>
-        <tr>
-          <td width=50 style='vertical-align:top;'>Step 1:</td>
-          <td>Fill out the questionnaire in your preferred language</td>
-        </tr>
-        <tr>
-          <td style='vertical-align:top;'>Step 2:</td>
-          <td>Translate your completed questionnaire into the language of your caretaker by clicking on the appropriate flag or language name. All data will remain private on your device and will not be transmitted to any server.</td>
-        </tr>
-      </table>
-    </div>
+      <div id="sidebar">
+          <ul id="sidebar-items">
+              <li>
+                  <ul class="languages">
+                      <li class="language-en-US selected-language"><a href="#" onclick="switchLocale('en-US');return false;">
+                          <img src='assets/UnitedKingdom.png'>
+                              Change to English
+                              </a></li>
+                      <li class="language-es-MX selected-language"><a href="#" onclick="switchLocale('es-MX');return false;">
+                          <img src='assets/Mexico.png'>
+                              Cambiar a espa&#241;ol
+                              </a></li>
+                      <li class="language-fr-FR selected-language"><a href="#" onclick="switchLocale('fr-FR');return false;">
+                          <img src='assets/France.png'>
+                              Changer au fran&#231;ais
+                              </a></li>
+                      <li class="language-sw selected-language"><a href="#" onclick="switchLocale('sw');return false;">
+                          <img src='assets/Kenya.png'>
+                              Mabadiliko ya Kiswahili
+                              </a></li>
+                      <li class="language-ar selected-language"><a href="#" onclick="switchLocale('ar');return false;">
+                          <img src='assets/Egypt.png'>
+                              &#1578;&#1594;&#1610;&#1610;&#1585; &#1604;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;
+                              </a></li>
+                      <li class="language-pt-PT selected-language"><a href="#" onclick="switchLocale('pt-PT');return false;">
+                          <img src='assets/Portugal.png'>
+                              Mude para Portugu&#234;s
+                              </a></li>
+                      <li class="language-it selected-language"><a href="#" onclick="switchLocale('it');return false;">
+                          <img src='assets/Italy.png'>
+                              Cambia in Italiano
+                              </a></li>
+                      <li class="language-ru-RU selected-language"><a href="#" onclick="switchLocale('ru-RU');return false;">
+                          <img src='assets/RussianFederation.png'>
+                              &#1048;&#1079;&#1084;&#1077;&#1085;&#1077;&#1085;&#1080;&#1077; &#1056;&#1086;&#1089;&#1089;&#1080;&#1103;
+                              </a></li>
+                      <li class="language-sr selected-language"><a href="#" onclick="switchLocale('sr');return false;">
+                          <img src='assets/Serbia.png'>
+                              &#1055;&#1088;&#1086;&#1084;&#1077;&#1085;&#1072; &#1085;&#1072; &#1089;&#1088;&#1087;&#1089;&#1082;&#1086;&#1112;
+                              </a></li>
+                      <li class="language-zh selected-language"><a href="#" onclick="switchLocale('zh');return false;">
+                          <img src='assets/China.png'>
+                              &#20999;&#25442;&#21040;&#20013;&#25991;
+                              </a></li>
+                      <li class="language-bg selected-language"><a href="#" onclick="switchLocale('bg');return false;">
+                          <img src='assets/Bulgaria.png'>
+                              &#1055;&#1088;&#1086;&#1084;&#1103;&#1085;&#1072; &#1085;&#1072; &#1082;&#1080;&#1090;&#1072;&#1081;&#1089;&#1082;&#1080;
+                              </a></li>
+                      <li class="language-ht selected-language"><a href="#" onclick="switchLocale('ht');return false;">
+                          <img src='assets/Haiti.png'>
+                              Chanjman nan krey&#242;l
+                              </a></li>
+                      <li class="language-hi selected-language"><a href="#" onclick="switchLocale('hi');return false;">
+                          <img src='assets/India.png'>
+                              Bhasha
+                              </a></li>
+                      <li class="language-tr selected-language"><a href="#" onclick="switchLocale('tr');return false;">
+                          <img src='assets/Turkey.png'>
+                              T&#252;rk de&#287;i&#351;tirin
+                              </a></li>
+                      <li class="language-he selected-language"><a href="#" onclick="switchLocale('he');return false;">
+                          <img src='assets/Israel.png'>
+                              &#1513;&#1497;&#1504;&#1493;&#1497; &#1500;&#1506;&#1489;&#1512;&#1497;&#1514;
+                              </a></li>
+                      <li class="language-fil selected-language"><a href="#" onclick="switchLocale('fil');return false;">
+                              <img src='assets/Philippines.png'>
+                              Baguhin sa Pilipino
+                              </a></li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+
+    <h1 class="translate_emergency_triage_questionnaire" style='display:inline;'></h1>
+      <p class="translate_instructions_start"></p>
+      <p>
+      <span class="translate_instructions_step_1_title" style="font-weight:bold;"></span><br />
+      <span class="translate_instructions_step_1_text"></span>
+      </p>
+      <p>
+      <span class="translate_instructions_step_2_title" style="font-weight:bold;"></span><br />
+      <span class="translate_instructions_step_2_text"></span>
+      </p>
     <h2 class="translate_language"></h2>
   </div>
-  <div id="sidebar">
-  <ul id="sidebar-items">
-    <li>
-      <ul class="languages">
-          <li class="language-en-US selected-language"><a href="#" onclick="switchLocale('en-US');return false;">
-            <img src='assets/UnitedKingdom.png'>
-            Change to English
-          </a></li>
-          <li class="language-es-MX selected-language"><a href="#" onclick="switchLocale('es-MX');return false;">
-            <img src='assets/Mexico.png'>
-            Cambiar a espa&#241;ol
-          </a></li>
-          <li class="language-fr-FR selected-language"><a href="#" onclick="switchLocale('fr-FR');return false;">
-            <img src='assets/France.png'>
-            Changer au fran&#231;ais
-          </a></li>
-          <li class="language-sw selected-language"><a href="#" onclick="switchLocale('sw');return false;">
-            <img src='assets/Kenya.png'>
-            Mabadiliko ya Kiswahili
-          </a></li>
-          <li class="language-ar selected-language"><a href="#" onclick="switchLocale('ar');return false;">
-            <img src='assets/Egypt.png'>
-            &#1578;&#1594;&#1610;&#1610;&#1585; &#1604;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;
-          </a></li>
-          <li class="language-pt-PT selected-language"><a href="#" onclick="switchLocale('pt-PT');return false;">
-            <img src='assets/Portugal.png'>
-            Mude para Portugu&#234;s
-          </a></li>
-          <li class="language-it selected-language"><a href="#" onclick="switchLocale('it');return false;">
-            <img src='assets/Italy.png'>
-            Cambia in Italiano
-          </a></li>
-          <li class="language-ru-RU selected-language"><a href="#" onclick="switchLocale('ru-RU');return false;">
-            <img src='assets/RussianFederation.png'>
-            &#1048;&#1079;&#1084;&#1077;&#1085;&#1077;&#1085;&#1080;&#1077; &#1056;&#1086;&#1089;&#1089;&#1080;&#1103;
-          </a></li>
-          <li class="language-sr selected-language"><a href="#" onclick="switchLocale('sr');return false;">
-            <img src='assets/Serbia.png'>
-            &#1055;&#1088;&#1086;&#1084;&#1077;&#1085;&#1072; &#1085;&#1072; &#1089;&#1088;&#1087;&#1089;&#1082;&#1086;&#1112;
-          </a></li>
-          <li class="language-zh selected-language"><a href="#" onclick="switchLocale('zh');return false;">
-            <img src='assets/China.png'>
-            &#20999;&#25442;&#21040;&#20013;&#25991;
-          </a></li>
-          <li class="language-bg selected-language"><a href="#" onclick="switchLocale('bg');return false;">
-            <img src='assets/Bulgaria.png'>
-            &#1055;&#1088;&#1086;&#1084;&#1103;&#1085;&#1072; &#1085;&#1072; &#1082;&#1080;&#1090;&#1072;&#1081;&#1089;&#1082;&#1080;
-          </a></li>
-          <li class="language-ht selected-language"><a href="#" onclick="switchLocale('ht');return false;">
-            <img src='assets/Haiti.png'>
-            Chanjman nan krey&#242;l
-          </a></li>
-          <li class="language-hi selected-language"><a href="#" onclick="switchLocale('hi');return false;">
-            <img src='assets/India.png'>
-            Bhasha
-          </a></li>
-      </ul>
-    </li>
-  </ul>
-</div>
 
 
   <ol id="l1-list">
@@ -226,6 +235,16 @@
       </li>
     </ul>
   </ol>
+  <a href="#" onclick="clearAllAnswers();return false;"><span class="translate_clear_answers"></span><a>
+  <h3 class="translate_disclaimer_start"></h3>
+  <ul>
+      <li><h4 class="translate_disclaimer_1"></h4></li>
+      <li><h4 class="translate_disclaimer_2"></h4></li>
+      <li><h4 class="translate_disclaimer_3"></h4></li>
+      <li><h4 class="translate_disclaimer_4"></h4></li>
+      <li><h4 class="translate_disclaimer_5"></h4></li>
+      <li><h4 class="translate_disclaimer_6"></h4></li>
+  </ul>
 </div>
 </form>
     

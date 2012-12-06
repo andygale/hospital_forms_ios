@@ -36,6 +36,7 @@
 		8439ACC31654202B003CD18B /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8439ACC21654202A003CD18B /* icon.png */; };
 		8439ACC516542541003CD18B /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8439ACC416542541003CD18B /* icon@2x.png */; };
 		8439ACC716542904003CD18B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8439ACC616542903003CD18B /* Default-568h@2x.png */; };
+		84BCE0E116666BCC003F11BF /* ReadMe.txt in Resources */ = {isa = PBXBuildFile; fileRef = 84BCE0E016666BCC003F11BF /* ReadMe.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,7 @@
 		8439ACC21654202A003CD18B /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		8439ACC416542541003CD18B /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		8439ACC616542903003CD18B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		84BCE0E016666BCC003F11BF /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* EmergencyQuestionaire-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "EmergencyQuestionaire-Info.plist"; path = "../EmergencyQuestionaire-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x~iphone.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -168,6 +170,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				84BCE0E016666BCC003F11BF /* ReadMe.txt */,
 				8439ACC616542903003CD18B /* Default-568h@2x.png */,
 				8439ACC416542541003CD18B /* icon@2x.png */,
 				8439ACC21654202A003CD18B /* icon.png */,
@@ -372,6 +375,7 @@
 				8439ACC31654202B003CD18B /* icon.png in Resources */,
 				8439ACC516542541003CD18B /* icon@2x.png in Resources */,
 				8439ACC716542904003CD18B /* Default-568h@2x.png in Resources */,
+				84BCE0E116666BCC003F11BF /* ReadMe.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,8 +459,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv7s,
+					armv7,
+					armv6,
+				);
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_OBJCPP_ARC_ABI = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -475,8 +486,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv7s,
+					armv7,
+					armv6,
+				);
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_OBJCPP_ARC_ABI = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Andrew Gale";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Andrew Gale";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EmergencyQuestionaire/EmergencyQuestionaire-Prefix.pch";
@@ -485,6 +503,8 @@
 				INFOPLIST_FILE = "EmergencyQuestionaire/EmergencyQuestionaire-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = EmergencyQuestionaire;
+				PROVISIONING_PROFILE = "335B1564-CA2D-431B-ABA5-ADCE441706CF";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E8AC25FB-CACD-4FF9-8710-9E5C1A498B2E";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -9374,7 +9374,8 @@ function switchLocale(locale) {
         text = I18n.t(newName, opts);
       }
     }
-    $('.translate_'+name).each(function(index) { $(this).text(text || '!missing_translation!'); });
+    text = text || I18n.translations['en-US'][name];
+    $('.translate_'+name).each(function(index) { $(this).text(text); });
   });
 }
 
@@ -9389,6 +9390,16 @@ function keys(ob)
 $(document).ready(function(){
   switchLocale('en-US');
 });
+
+                                      function clearAllAnswers() {
+                                      var result = confirm(I18n.t('are_you_sure') || I18n.translations['en-US']['are_you_sure'] || 'sure?');
+                                      if (result) {
+                                      $('input:checkbox').removeAttr('checked');
+                                      $('input:radio').removeAttr('checked');
+                                      $('input:text').val('');
+                                      }
+                                      }
+
 // This is a manifest file that'll be compiled into including all the files listed below.
 // Add new JavaScript/Coffee code in separate files in this directory and they'll automatically
 // be included in the compiled file accessible from http://example.com/assets/application.js
